@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> 컴퓨터 코딩- 20일차</title>
+  </head>
+  <body>
+    <h1> html practice </h1>
+    <div id="text">
+    <iframe src="210126.html" width="80%" height="100%"></iframe>
+    <iframe src="210127.html" width="80%" height="100%"></iframe>
+    <iframe src="210128정리.html" width="80%" height="100%"></iframe>
+    <iframe src="210129.html" width="80%" height="100%"></iframe>
+    <iframe src="210130.html" width="80%" height="100%"></iframe>
+  </div>
+  <div>
+    practice 1.
+    iframe태그와 ul태그 이용하기
+    <iframe src="http://www.nate.com/" width="500px;" height="500px;"></iframe>
+    <ul>
+      <li><a href="https://www.naver.com/" target="_blank">네이버</a></li>
+      <li><a href="http://www.daum.com/" target="_blank">다음</a></li>
+      <li><a href="http://www.nate.com/" target="_blank">네이트</a></li>
+    </ul>
+  </div>
+  -왜 네이버가 연결이 안되는거지..?
+  <div>
+    <strong>HTML5 요소 데모 화면</strong>
+    <form action="index.html" method="post">
+      이름:<input type="text" name=name><br />
+      이메일:<input type="email" name="email"><br />
+      웹사이트:<input type="url" name="url"><br />
+      정수:<input type="number" max="10" min="0" step="1" name="number"><br />
+      범위:<input type="range" max="10" min="0" step="1" name="range"><br />
+      메시지:<textarea></textarea><br />
+      <input type="submit" value="제출" name="submit"><br />
+    </form>
+  </div>
+  <div>
+    <form>
+    <fieldset>
+      <legend>신상정보</legend>
+      <ol>
+        <li>이름<input type="text" name="name" value="이름"></li>
+        <li>이메일<input type="email" name="email" value="example@domain.com"></li>
+        <li>휴대폰 번호<input type="tel" name="tel" value="010-1234-5678"></li>
+      </ol>
+    </fieldset>
+  </form>
+  </div>
+  <div>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>배송지 주소</legend>
+        <ol>
+          <li>주소<textarea name="adress" rows="8" cols="80"></textarea>
+          <li>우편번호<input type="text"></li>
+          <li>국가<input type="text"></li>
+        </ol>
+      </fieldset>
+    </form>
+  </div>
+  <div>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>카드정보입력</legend>
+        <ol>
+          <li>
+            <div id="cardtype">
+              <form class="" action="index.html" method="post">
+              <fieldset>
+                <legend>카드타입</legend>
+              <ol>
+                <li>
+                  <label for="visa">VISA</label> <input type="radio" name="visa" id="visa" value="visa">
+                </li>
+                <li>
+                  <label for="AmEx">AmEx</label> <input type="radio" name="AmEx" id="AmEx" value="AmEx">
+                </li>
+                <li>
+                  <label for="Mastercard">Mastercard</label> <input type="radio" name="Mastercard" id="Mastercard" value="Mastercard">
+                </li>
+              </ol>
+            </fieldset>
+              </form>
+            </div>
+          </li>
+          <li>카드번호<input type="number" max="100" min="0" step="1"></li>
+          <li>CRC번호<input type="number" max="999" min="001" step="1"></li>
+          <li>카드소유자 이름<input type="text" name="name" value="카드상의 이름"></li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="구매">
+      </fieldset>
+    </form>
+  </div>
+  </body>
+</html>

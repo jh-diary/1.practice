@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>컴퓨터 코딩 - 18일 </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>제로에서 시작하기</h1>
+    <div id="grid">
+      <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div id="main">
+      <h2> 컴퓨터 코딩 - 18일차 </h2>
+      irame태그의 실습!
+      <iframe src="" name="iframe1"></iframe>
+      <a href="https://www.w3schools.com/tags/tag_hr.asp" target="iframe1">www</a>
+      <iframe src="210128정리0.html" width="70%" height="70%" seamless></iframe>
+      <div style="height:20px; background-color:yellow;"></div>
+      <div style="height:20px; background-color:black;"></div>
+      <div style="height:20px; background-color:red;"></div>
+      <p>
+        html 입력 양식
+        jsp와 같은 사용자와의 상호작용을 하는 언어까지 배우고 웹페이지를 제작할 때
+        html의 입력 양식은 form태그를 사용한다
+        form태그는 이 정보를 어디로 보내겠습니다~ 라는 의미가 담겨있는 태그이다.
+        입력양식은 항상 form으로 시작하고 action 속성을 사용하는데 이 속성은 사용자가 입력한 데이터를 받아서 정보 처리를 하는 스크립트의 주소를 url형식으로 적어준다.
+        method속성은 데이터를 보내는 방법을 쓰는데 post형식과 get형식이있다. get방식보다 post방식이 더 보안성이 좋다.
+        <form action="input.jsp" method="post">
+          <input type="text" name="input">
+          <input type="submit">
+        </form>
+      </p>
+      <p>
+        html 입력 태그#1
+        form안에서 적용되는 요소들 중에 input태그는 정말 중요하다
+        input의 형식은 일반적으로
+        input type="" value="" name="" 의 형식을 지닌다.
+        type속성은 입력 요소의 유형을 나타내고 value는 입력 요소의 초기값이며 버튼에 나타내는 텍스트이다. name은 서버로 전달되는 이름이다.
+        많이 입력되는 input태그의 type속성값은 text,password,radio,checkbox,file,reset,image,hidden,submit이다.
+        <dl>
+          <dt>input type="text"</dt> <dd>텍스트 입력이 가능한 한줄짜리 입력 필드를 나타내고 기본이 20자인데 size속성을 사용하여 변경가능하다.</dd>
+          <dt>input type="password"</dt> <dd>패스워드필드를 정의하고 사용자가 입력한 글자는 보이지않게된다.</dd>
+          <dt>input type="radio" </dt> <dd>라디오를 틀어주는 것이 아니라 원형체크박스가 나타나서 양자택일 하거나 선택할 수 있는 선택지를 만드는 태그이다. 이 때 name과 value를 같이 지정해주고 name은 같아야 동일 그룹으로 지정되기때문에 value값만 다르게 해준다.</dd>
+          <dt>input type="checkbox"</dt> <dd>input type=" radio"와 비슷한데 체크박스 형태로! name값은 같아야한다는 거 잊지말기!</dd>
+          <dt>input type="submit"</dt><dd> 제출 버튼은 데이터를 서버로 전송하는데 사용된다.</dd>
+          <dt>input type="reset"</dt> <dd>입력 필드에 입력한 값이 모두 초기화가 됨</dd>
+          <dt>input type="button"</dt> <dd> 버튼을 생성하는 것이고 onclick은 '버튼이 클릭이 되면'이라는 뜻이다. alert는 경고창을 띄우는 용도로 사용되면서 alert('')의 방식으로 사용된다.</dd>
+          *button은 태그로도 지정할 수 있고 input type="button"과의 차이점은 button요소 안에 텍스트나 이미지와 같은 콘텐츠를 넣을 수 있다는 것이다.
+          <dt>input type="image"</dt><dd>버튼을 이미지로 만들고 싶을 때는 두가지의 방법으로 가능한데 첫째는 < button type="submit" > < img src="submit.png" > < /button> 이고
+          둘째방법은 < input type="image" src="submit.png" alt="제출 버튼"></dd>
+        </dl>
+      </p>
+    </div>
+    </div>
+  </body>
+</html>
